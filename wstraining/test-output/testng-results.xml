@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4375" started-at="2021-05-25T09:54:43Z" finished-at="2021-05-25T09:54:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4375" started-at="2021-05-25T09:54:43Z" finished-at="2021-05-25T09:54:47Z">
+      <class name="com.synechron.ws.wstraining.basics.get.GetTrelloBoard">
+        <test-method status="PASS" signature="validateGetBoardInBDDStyle()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetTrelloBoard@73ad2d6]" name="validateGetBoardInBDDStyle" duration-ms="2900" started-at="2021-05-25T09:54:43Z" finished-at="2021-05-25T09:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetBoardInBDDStyle -->
+        <test-method status="PASS" signature="validateGetBoardInBDDStyleSimplified()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetTrelloBoard@73ad2d6]" name="validateGetBoardInBDDStyleSimplified" duration-ms="489" started-at="2021-05-25T09:54:45Z" finished-at="2021-05-25T09:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetBoardInBDDStyleSimplified -->
+        <test-method status="PASS" signature="validateGetBoardInExpectFormat()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetTrelloBoard@73ad2d6]" name="validateGetBoardInExpectFormat" duration-ms="481" started-at="2021-05-25T09:54:46Z" finished-at="2021-05-25T09:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetBoardInExpectFormat -->
+        <test-method status="PASS" signature="validateGetBoardInRestFormat()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetTrelloBoard@73ad2d6]" name="validateGetBoardInRestFormat" duration-ms="468" started-at="2021-05-25T09:54:46Z" finished-at="2021-05-25T09:54:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetBoardInRestFormat -->
+      </class> <!-- com.synechron.ws.wstraining.basics.get.GetTrelloBoard -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

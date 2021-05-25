@@ -1,0 +1,23 @@
+package com.synechron.ws.wstraining.basics.get;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class GetTrelloBoard {
+	
+	
+	@Test
+	public void validateGetBoard()
+	{
+		RestAssured.
+			given()
+				.param("key", "")
+				.param("token", "")
+			.when()
+				.get("")
+			.then()
+				.assertThat().statusCode(200);
+	}
+
+}

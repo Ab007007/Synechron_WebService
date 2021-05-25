@@ -1,0 +1,14 @@
+package com.synechron.ws.wstraining.basics.get;
+
+import org.testng.annotations.Test;
+
+public class GetTrelloBoard {
+	
+	
+	@Test
+	public void validateGetBoard()
+	{
+		
+	}
+
+}

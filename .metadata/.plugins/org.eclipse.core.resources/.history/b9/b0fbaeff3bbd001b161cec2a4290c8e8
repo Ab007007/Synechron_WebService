@@ -1,0 +1,12 @@
+package com.synechron.ws.wstraining.basics.get;
+
+public class GetTrelloBoard {
+	
+	
+	@Test
+	public void validateGetBoard()
+	{
+		
+	}
+
+}
