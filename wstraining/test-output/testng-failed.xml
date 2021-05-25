@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.synechron.ws.wstraining.basics.get.GetTrelloBoard">
+      <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation">
         <methods>
-          <include name="validateGetBoard"/>
+          <include name="validateResponseHeaderInGet"/>
         </methods>
-      </class> <!-- com.synechron.ws.wstraining.basics.get.GetTrelloBoard -->
+      </class> <!-- com.synechron.ws.wstraining.basics.get.GetBoardWithValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
