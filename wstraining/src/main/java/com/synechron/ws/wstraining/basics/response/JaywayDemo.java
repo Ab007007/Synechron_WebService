@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import java.util.List;
 import java.util.Map;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.jayway.jsonpath.JsonPath;
@@ -23,8 +24,15 @@ public class JaywayDemo {
 	public void createValidataleResponseUsingJayway() {
 		RestAssured.baseURI = baseurl;
 
-		 response = given().param("key", key).param("token", token).when().get("/1/boards/llt4bIbC").then()
-				.assertThat().statusCode(200).extract().response();
+		 response = given()
+				 		.param("key", key)
+				 		.param("token", token)
+			 		.when()
+			 			.get("/1/boards/llt4bIbC")
+		 			.then()
+		 				.assertThat().statusCode(200)
+	 				.extract()
+	 					.response();
 
 	}
 	
@@ -44,7 +52,7 @@ public class JaywayDemo {
 		
 		//printing using for each
 		for (Map<String, String> map : prefsArray) {
-			System.out.println(map);
+			Reporter.log(map.toString());
 		}
 		
 //		//print using for loop
@@ -59,5 +67,40 @@ public class JaywayDemo {
 //			
 //		}
 	} 
+	
+	
+	@Test(dependsOnMethods = "createValidataleResponseUsingJayway")
+	public void getAllUtlFromArray()
+	{
+		System.out.println("---Printing all url------");
+		List<String>urls = JsonPath.read(response.asString(), "$.prefs.backgroundImageScaled[*].url");
+		
+		for (String url : urls) {
+			Reporter.log(url + "<br>");
+		}
+	}
+	
+	@Test(dependsOnMethods = "createValidataleResponseUsingJayway")
+	public void getAllUtlInResponse()
+	{
+		System.out.println("---Printing all url------");
+		List<String>urls = JsonPath.read(response.asString(), "$..url");
+		
+		for (String url : urls) {
+			Reporter.log(url + "<br>");
+		}
+	}
+	
+	@Test(dependsOnMethods = "createValidataleResponseUsingJayway")
+	public void jaywayFiltersTest()
+	{
+		System.out.println("---Printing urls whose width is less than 640 ------");
+		List<String>urls = JsonPath.read(response.asString(), "$.prefs.backgroundImageScaled.[?(@.width < 640)].url");
+		
+		for (String url : urls) {
+			Reporter.log(url + "<br>");
+		}
+	}
+	
 
 }
