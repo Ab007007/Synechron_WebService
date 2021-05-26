@@ -5,7 +5,7 @@
     <classes>
       <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation">
         <methods>
-          <include name="validateResponseHeaderInGet"/>
+          <include name="verifyPerticularValue"/>
         </methods>
       </class> <!-- com.synechron.ws.wstraining.basics.get.GetBoardWithValidation -->
     </classes>
