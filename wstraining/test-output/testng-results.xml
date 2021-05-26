@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10978" started-at="2021-05-26T04:29:32Z" finished-at="2021-05-26T04:29:43Z">
+  <suite name="Default suite" duration-ms="4485" started-at="2021-05-26T07:51:40Z" finished-at="2021-05-26T07:51:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10978" started-at="2021-05-26T04:29:32Z" finished-at="2021-05-26T04:29:43Z">
-      <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation">
-        <test-method status="PASS" signature="multipleAssertions()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="multipleAssertions" duration-ms="6166" started-at="2021-05-26T04:29:32Z" finished-at="2021-05-26T04:29:38Z">
+    <test name="Default test" duration-ms="4485" started-at="2021-05-26T07:51:40Z" finished-at="2021-05-26T07:51:44Z">
+      <class name="com.synechron.ws.wstraining.basics.response.JaywayDemo">
+        <test-method status="PASS" signature="createValidataleResponseUsingJayway()[pri:0, instance:com.synechron.ws.wstraining.basics.response.JaywayDemo@31a5c39e]" name="createValidataleResponseUsingJayway" duration-ms="4313" started-at="2021-05-26T07:51:40Z" finished-at="2021-05-26T07:51:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipleAssertions -->
-        <test-method status="PASS" signature="printAllArrayElements()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="printAllArrayElements" duration-ms="729" started-at="2021-05-26T04:29:38Z" finished-at="2021-05-26T04:29:39Z">
+        </test-method> <!-- createValidataleResponseUsingJayway -->
+        <test-method status="PASS" signature="getArray()[pri:0, instance:com.synechron.ws.wstraining.basics.response.JaywayDemo@31a5c39e]" name="getArray" duration-ms="125" started-at="2021-05-26T07:51:44Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.JaywayDemo.createValidataleResponseUsingJayway" finished-at="2021-05-26T07:51:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printAllArrayElements -->
-        <test-method status="PASS" signature="validateBodyInGet()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="validateBodyInGet" duration-ms="687" started-at="2021-05-26T04:29:39Z" finished-at="2021-05-26T04:29:40Z">
+        </test-method> <!-- getArray -->
+        <test-method status="PASS" signature="getID()[pri:0, instance:com.synechron.ws.wstraining.basics.response.JaywayDemo@31a5c39e]" name="getID" duration-ms="4" started-at="2021-05-26T07:51:44Z" depends-on-methods="com.synechron.ws.wstraining.basics.response.JaywayDemo.createValidataleResponseUsingJayway" finished-at="2021-05-26T07:51:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateBodyInGet -->
-        <test-method status="PASS" signature="validateKeyExist()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="validateKeyExist" duration-ms="736" started-at="2021-05-26T04:29:40Z" finished-at="2021-05-26T04:29:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateKeyExist -->
-        <test-method status="PASS" signature="validateMultipleValuesInArray()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="validateMultipleValuesInArray" duration-ms="622" started-at="2021-05-26T04:29:40Z" finished-at="2021-05-26T04:29:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateMultipleValuesInArray -->
-        <test-method status="PASS" signature="validateResponseHeaderInGet()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="validateResponseHeaderInGet" duration-ms="658" started-at="2021-05-26T04:29:41Z" finished-at="2021-05-26T04:29:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseHeaderInGet -->
-        <test-method status="PASS" signature="validateResponseInArray()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="validateResponseInArray" duration-ms="610" started-at="2021-05-26T04:29:42Z" finished-at="2021-05-26T04:29:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseInArray -->
-        <test-method status="PASS" signature="verifyPerticularValue()[pri:0, instance:com.synechron.ws.wstraining.basics.get.GetBoardWithValidation@7085bdee]" name="verifyPerticularValue" duration-ms="709" started-at="2021-05-26T04:29:42Z" finished-at="2021-05-26T04:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPerticularValue -->
-      </class> <!-- com.synechron.ws.wstraining.basics.get.GetBoardWithValidation -->
+        </test-method> <!-- getID -->
+      </class> <!-- com.synechron.ws.wstraining.basics.response.JaywayDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -151,7 +151,7 @@ public class GetBoardWithValidation {
 		then(). 
 			assertThat().statusCode(200).
 			and().
-				body("prefs.backgroundImageScaled.findAll{it.width == 640 }", hasItems(hasEntry("width", 640)));
+				body("prefs.backgroundImageScaled.findAll{it.width == 640 }", hasItems(hasEntry("height", 960)));
 	
 	}
 	
