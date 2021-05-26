@@ -1,0 +1,15 @@
+package com.synechron.ws.wstraining.basics.post;
+
+import org.testng.annotations.Test;
+
+public class CreateRepository {
+	
+	
+	
+	@Test
+	public void validateCreateRepository()
+	{
+		
+	}
+
+}

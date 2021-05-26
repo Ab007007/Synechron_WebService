@@ -19,14 +19,13 @@ public class CreateBoard
 		RestAssured.baseURI = baseurl;
 
 				given()
-				 		.queryParam("key", key)
-				 		.queryParam("token", token)
-				 		.queryParam("name", "My-AutomationCreated-Board")
-				 		.headers("Content-type","application/json")
+				 		.param("key", key)
+				 		.param("token", token)
+				 		.params("name", "My-AutomationCreated-Board")
 			 		.when()
 			 			.post("/1/boards")
 		 			.then()
-		 				.assertThat().statusCode(200);
+		 				.assertThat().statusCode(200).log().body();
 	}
 
 }

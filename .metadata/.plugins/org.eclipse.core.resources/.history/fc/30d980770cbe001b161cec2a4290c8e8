@@ -22,11 +22,10 @@ public class CreateBoard
 				 		.queryParam("key", key)
 				 		.queryParam("token", token)
 				 		.queryParam("name", "My-AutomationCreated-Board")
-				 		.headers("Content-type","application/json")
 			 		.when()
 			 			.post("/1/boards")
 		 			.then()
-		 				.assertThat().statusCode(200);
+		 				.assertThat().statusCode(200).log().body();
 	}
 
 }

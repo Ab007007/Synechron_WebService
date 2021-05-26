@@ -1,0 +1,8 @@
+package com.synechron.ws.wstraining.basics.post;
+
+public class Snippet {
+	public static void main(String[] args) {
+		queryParam
+	}
+}
+
