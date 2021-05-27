@@ -1,0 +1,17 @@
+package com.synechron.ws.wstraining.basics.download;
+
+import java.io.File;
+
+import org.testng.annotations.Test;
+
+public class FileDownloadDemo {
+	
+	@Test
+	public void fileDownoladValidate()
+	{
+		File file = new File("downloaded/geckodriver-v0.29.1-win32.zip");
+		
+		int expectSize = (int)file.length();
+	}
+
+}

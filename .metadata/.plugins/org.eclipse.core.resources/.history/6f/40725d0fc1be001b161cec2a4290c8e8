@@ -1,0 +1,28 @@
+package com.synechron.ws.wstraining.basics.download;
+
+import java.io.File;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class FileDownloadDemo {
+	
+	@Test
+	public void fileDownoladValidate()
+	{
+		File file = new File("downloaded/geckodriver-v0.29.1-win32.zip");
+		
+		int expectSize = (int)file.length();
+		
+		
+		byte[] actualValue = RestAssured.given()
+			.when()
+				.get("https://github.com/mozilla/geckodriver/releases/download/v0.29.1/geckodriver-v0.29.1-win32.zip")
+			.then()
+				.extract()
+				.asByteArray();
+		
+	}
+
+}

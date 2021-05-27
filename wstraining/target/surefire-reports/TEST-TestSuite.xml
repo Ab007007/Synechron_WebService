@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="17.567" tests="14" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\target\test-classes;D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\target\classes;C:\Users\Aravind\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Aravind\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Aravind\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Aravind\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Aravind\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Aravind\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Aravind\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Aravind\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Aravind\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Aravind\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Aravind\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Aravind\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\json-schema-validator\4.4.0\json-schema-validator-4.4.0.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Aravind\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Aravind\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Aravind\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Aravind\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Aravind\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Aravind\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Aravind\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.0\jackson-databind-2.11.0.jar;C:\Users\Aravind\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.0\jackson-annotations-2.11.0.jar;C:\Users\Aravind\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.0\jackson-core-2.11.0.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Aravind\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Aravind\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Aravind\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Aravind\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Aravind\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Aravind\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\spring-mock-mvc\4.4.0\spring-mock-mvc-4.4.0.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\spring-commons\4.4.0\spring-commons-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-test\4.3.23.RELEASE\spring-test-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-core\4.3.23.RELEASE\spring-core-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-webmvc\4.3.23.RELEASE\spring-webmvc-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-aop\4.3.23.RELEASE\spring-aop-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-beans\4.3.23.RELEASE\spring-beans-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-expression\4.3.23.RELEASE\spring-expression-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-web\4.3.23.RELEASE\spring-web-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\spring-web-test-client\4.4.0\spring-web-test-client-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-context\5.1.0.RELEASE\spring-context-5.1.0.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-webflux\5.1.0.RELEASE\spring-webflux-5.1.0.RELEASE.jar;C:\Users\Aravind\.m2\repository\io\projectreactor\reactor-core\3.2.0.RELEASE\reactor-core-3.2.0.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\reactivestreams\reactive-streams\1.0.2\reactive-streams-1.0.2.jar;C:\Users\Aravind\.m2\repository\org\synchronoss\cloud\nio-multipart-parser\1.1.0\nio-multipart-parser-1.1.0.jar;C:\Users\Aravind\.m2\repository\org\synchronoss\cloud\nio-stream-storage\1.1.3\nio-stream-storage-1.1.3.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\scala-support\4.4.0\scala-support-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\scala-lang\scala-library\2.13.0\scala-library-2.13.0.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\kotlin-extensions\4.4.0\kotlin-extensions-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.5.0\kotlin-stdlib-jdk8-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.5.0\kotlin-stdlib-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.0\kotlin-stdlib-common-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.5.0\kotlin-stdlib-jdk7-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Aravind\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Aravind\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Aravind\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\Aravind\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Aravind\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Aravind\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Aravind\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Aravind\.m2\repository\commons-io\commons-io\2.9.0\commons-io-2.9.0.jar;C:\Users\Aravind\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Aravind\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Aravind\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Aravind\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Aravind\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Aravind\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\Aravind\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Aravind\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Aravind\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Aravind\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Aravind\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Aravind\AppData\Local\Temp\surefire1516817408016027048\surefirebooter5212656767883921431.jar C:\Users\Aravind\AppData\Local\Temp\surefire1516817408016027048 2021-05-27T16-30-15_406-jvmRun1 surefire1704123933782309148tmp surefire_02054795690390956814tmp"/>
+    <property name="surefire.test.class.path" value="D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\target\test-classes;D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\target\classes;C:\Users\Aravind\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Aravind\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Aravind\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Aravind\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Aravind\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Aravind\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Aravind\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Aravind\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Aravind\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Aravind\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Aravind\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Aravind\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\json-schema-validator\4.4.0\json-schema-validator-4.4.0.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Aravind\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Aravind\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Aravind\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Aravind\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Aravind\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Aravind\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Aravind\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.0\jackson-databind-2.11.0.jar;C:\Users\Aravind\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.0\jackson-annotations-2.11.0.jar;C:\Users\Aravind\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.0\jackson-core-2.11.0.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Aravind\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Aravind\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Aravind\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Aravind\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Aravind\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Aravind\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Aravind\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\spring-mock-mvc\4.4.0\spring-mock-mvc-4.4.0.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\spring-commons\4.4.0\spring-commons-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-test\4.3.23.RELEASE\spring-test-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-core\4.3.23.RELEASE\spring-core-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-webmvc\4.3.23.RELEASE\spring-webmvc-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-aop\4.3.23.RELEASE\spring-aop-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-beans\4.3.23.RELEASE\spring-beans-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-expression\4.3.23.RELEASE\spring-expression-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-web\4.3.23.RELEASE\spring-web-4.3.23.RELEASE.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\spring-web-test-client\4.4.0\spring-web-test-client-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-context\5.1.0.RELEASE\spring-context-5.1.0.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\springframework\spring-webflux\5.1.0.RELEASE\spring-webflux-5.1.0.RELEASE.jar;C:\Users\Aravind\.m2\repository\io\projectreactor\reactor-core\3.2.0.RELEASE\reactor-core-3.2.0.RELEASE.jar;C:\Users\Aravind\.m2\repository\org\reactivestreams\reactive-streams\1.0.2\reactive-streams-1.0.2.jar;C:\Users\Aravind\.m2\repository\org\synchronoss\cloud\nio-multipart-parser\1.1.0\nio-multipart-parser-1.1.0.jar;C:\Users\Aravind\.m2\repository\org\synchronoss\cloud\nio-stream-storage\1.1.3\nio-stream-storage-1.1.3.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\scala-support\4.4.0\scala-support-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\scala-lang\scala-library\2.13.0\scala-library-2.13.0.jar;C:\Users\Aravind\.m2\repository\io\rest-assured\kotlin-extensions\4.4.0\kotlin-extensions-4.4.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.5.0\kotlin-stdlib-jdk8-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.5.0\kotlin-stdlib-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.0\kotlin-stdlib-common-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.5.0\kotlin-stdlib-jdk7-1.5.0.jar;C:\Users\Aravind\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Aravind\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Aravind\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Aravind\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\Aravind\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Aravind\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Aravind\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Aravind\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Aravind\.m2\repository\commons-io\commons-io\2.9.0\commons-io-2.9.0.jar;C:\Users\Aravind\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Aravind\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Aravind\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Aravind\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Aravind\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Aravind\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\Aravind\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Aravind\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Aravind\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Aravind\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Aravind\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Aravind"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="basedir" value="D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Aravind\AppData\Local\Temp\surefire1516817408016027048\surefirebooter5212656767883921431.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="Aravind"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Aravind\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Aravind\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\actiTIME\database\MySQL\bin;C:\Program Files (x86)\QuickTime Alternative\QTSystem;C:\Users\Aravind\AppData\Local\Programs\Python\Python37-32;&apos;C:\Users\Aravind\AppData\Local\Programs\Python\Python37-32\Scripts;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;D:\maven\apache-maven-3.6.1\bin;C:\Program Files\PuTTY\;C:\Users\Aravind\AppData\Local\Android\Sdk\platform-tools;C:\Users\Aravind\AppData\Local\Android\Sdk\tools;C:\Users\Aravind\AppData\Local\Android\Sdk\tools\bin;D:\Overview\jar\junit-4.12.jar;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\Aravind\AppData\Local\Android\Sdk\platform-tools;C:\Users\Aravind\AppData\Local\Android\Sdk\tools;C:\Users\Aravind\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Git\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\bin\git.exe;D:\Intellipaat\Intellipaat_08_Aug\Eclipse_WS\SeleniumTraining\drivers\IEDriverServer.exe;D:\maven\apache-maven-3.6.1\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Users\Aravind\AppData\Local\Microsoft\WindowsApps;C:\Users\Aravind\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Aravind\AppData\Local\Android\Sdk\platform-tools;C:\Users\Aravind\AppData\Local\Android\Sdk\tools;C:\Users\Aravind\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Java\jdk1.8.0_201\bin;;C:\Program Files\Docker Toolbox;C:\Users\Aravind\AppData\Roaming\npm;C:\Windows\system32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="multipleAssertions" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="5.187"/>
+  <testcase name="printAllArrayElements" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.608"/>
+  <testcase name="validateBodyInGet" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.616"/>
+  <testcase name="validateKeyExist" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.674"/>
+  <testcase name="validateMultipleValuesInArray" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.571"/>
+  <testcase name="validateResponseHeaderInGet" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.642"/>
+  <testcase name="validateResponseInArray" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.581"/>
+  <testcase name="verifyPerticularValue" classname="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" time="0.553"/>
+  <testcase name="validateGetBoardInBDDStyle" classname="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" time="0.492"/>
+  <testcase name="validateGetBoardInBDDStyleSimplified" classname="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" time="0.504"/>
+  <testcase name="validateGetBoardInExpectFormat" classname="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" time="0.516"/>
+  <testcase name="validateGetBoardInRestFormat" classname="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" time="0.476"/>
+  <testcase name="validateCreateRepository" classname="com.synechron.ws.wstraining.basics.post.CreateRepository" time="0.506">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <401>.
+
+	at com.synechron.ws.wstraining.basics.post.CreateRepository.validateCreateRepository(CreateRepository.java:28)
+]]></failure>
+    <system-out><![CDATA[PASSED: validateKeyExist
+PASSED: validateGetBoardInBDDStyle
+PASSED: validateBodyInGet
+PASSED: multipleAssertions
+PASSED: validateGetBoardInExpectFormat
+PASSED: validateGetBoardInRestFormat
+PASSED: validateResponseHeaderInGet
+PASSED: verifyPerticularValue
+PASSED: validateResponseInArray
+PASSED: validateGetBoardInBDDStyleSimplified
+PASSED: validateMultipleValuesInArray
+PASSED: printAllArrayElements
+
+===============================================
+    Trello
+    Tests run: 12, Failures: 0, Skips: 0
+===============================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="createPayment" classname="com.synechron.ws.wstraining.basics.auth.CreatePayment" time="0.934">
+    <system-out><![CDATA[FAILED: validateCreateRepository
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <401>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.synechron.ws.wstraining.basics.post.CreateRepository.validateCreateRepository(CreateRepository.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+
+===============================================
+    GIT
+    Tests run: 1, Failures: 1, Skips: 0
+===============================================
+
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: application/json
+Paypal-Debug-Id: 93aa725278477
+X-Paypal-Token-Service: IAAS
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Date: Thu, 27 May 2021 11:00:42 GMT
+Content-Length: 457
+Connection: keep-alive
+
+{
+    "scope": "https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller Braintree:Vault https://uri.paypal.com/services/payments/refund https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://uri.paypal.com/services/vault/payment-tokens/readwrite https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks",
+    "access_token": "A21AALUPz4HmXa-L8cqKiuPYPQrHRukC_hHJ6mNVF0jgvm_ojYxjE292RMHKeMiWZ7x-ffhQNC0OI4ZMzlSgt-keevWOXfPzQ",
+    "token_type": "Bearer",
+    "app_id": "APP-80W284485P519543T",
+    "expires_in": 32400,
+    "nonce": "2021-05-27T11:00:42Zz2ijm9zCFjfx0S3cXmaB6dyMSkSbzQsPvvk14uVaaso"
+}
+{
+    "id": "PAYID-MCXXXWY67V43460035529432",
+    "intent": "sale",
+    "state": "created",
+    "payer": {
+        "payment_method": "paypal"
+    },
+    "transactions": [
+        {
+            "amount": {
+                "total": "30.11",
+                "currency": "USD",
+                "details": {
+                    "subtotal": "30.00",
+                    "tax": "0.07",
+                    "shipping": "0.03",
+                    "insurance": "0.01",
+                    "handling_fee": "1.00",
+                    "shipping_discount": "-1.00"
+                }
+            },
+            "description": "The payment transaction description.",
+            "custom": "EBAY_EMS_90048630024435",
+            "invoice_number": "48787589673",
+            "soft_descriptor": "ECHI5786786",
+            "payment_options": {
+                "allowed_payment_method": "INSTANT_FUNDING_SOURCE",
+                "recurring_flag": false,
+                "skip_fmf": false
+            },
+            "item_list": {
+                "items": [
+                    {
+                        "name": "hat",
+                        "sku": "1",
+                        "description": "Brown hat.",
+                        "price": "3.00",
+                        "currency": "USD",
+                        "tax": "0.01",
+                        "quantity": 5
+                    },
+                    {
+                        "name": "handbag",
+                        "sku": "product34",
+                        "description": "Black handbag.",
+                        "price": "15.00",
+                        "currency": "USD",
+                        "tax": "0.02",
+                        "quantity": 1
+                    }
+                ],
+                "shipping_address": {
+                    "recipient_name": "Brian Robinson",
+                    "line1": "4th Floor",
+                    "line2": "Unit #34",
+                    "city": "San Jose",
+                    "state": "CA",
+                    "postal_code": "95131",
+                    "country_code": "US",
+                    "phone": "011862212345678"
+                }
+            },
+            "related_resources": [
+                
+            ]
+        }
+    ],
+    "note_to_payer": "Contact us for any questions on your order.",
+    "create_time": "2021-05-27T11:00:42Z",
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAYID-MCXXXWY67V43460035529432",
+            "rel": "self",
+            "method": "GET"
+        },
+        {
+            "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1TG71932PC342173T",
+            "rel": "approval_url",
+            "method": "REDIRECT"
+        },
+        {
+            "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAYID-MCXXXWY67V43460035529432/execute",
+            "rel": "execute",
+            "method": "POST"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+</testsuite>

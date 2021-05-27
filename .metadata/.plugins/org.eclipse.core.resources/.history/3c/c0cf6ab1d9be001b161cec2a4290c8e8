@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+  <test thread-count="5" verbose="2" name="Trello">
+    <classes>
+      <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation"/>
+      <class name="com.synechron.ws.wstraining.basics.get.GetTrelloBoard"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  
+   <test thread-count="5" verbose="2" name="GIT">
+    <classes>
+      <class name="com.synechron.ws.wstraining.basics.post.CreateRepository"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  
+   <test thread-count="5" verbose="2" name="PayPal">
+    <classes>
+      <class name="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  
+  
+</suite> <!-- Default suite -->

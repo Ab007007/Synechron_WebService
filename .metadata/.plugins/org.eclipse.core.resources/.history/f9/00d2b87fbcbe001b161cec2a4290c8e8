@@ -1,0 +1,67 @@
+package com.synechron.ws.wstraining.basics.resTime;
+
+import static org.hamcrest.Matchers.equalTo;
+
+import java.util.concurrent.TimeUnit;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
+public class ValidateResponseTime {
+
+	static String baseurl = "https://api.github.com";
+	static String barrierToken = "Bearer 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";
+
+	static RequestSpecification reqSpec;
+	static RequestSpecBuilder builder;
+
+	static ResponseSpecification resSpec;
+	static ResponseSpecBuilder resBuilder;
+
+	static String body = "{\r\n" + "    \"name\" : \"SPECREPO\",\r\n"
+			+ "    \"description\" : \"First POST Using Body\"\r\n" + "}";
+
+	@BeforeClass
+	public void getSpecObj() {
+		RestAssured.baseURI = baseurl;
+
+		builder = new RequestSpecBuilder();
+		builder.addHeader("Authorization", barrierToken);
+		builder.addHeader("Content-type", "application/json");
+
+		reqSpec = builder.build();
+
+		resBuilder = new ResponseSpecBuilder();
+		resBuilder.expectHeader("Content-type", "application/json; charset=utf-8");
+		resBuilder.expectHeader("Server", "GitHub.com");
+		resBuilder.expectStatusCode(200);
+		resBuilder.expectBody("name", equalTo("AppiumAllIPO"));
+
+		resSpec = resBuilder.build();
+	}
+
+	@Test
+	public void responseINMS() {
+		long time = RestAssured.given().headers("Authorization", barrierToken).headers("Content-type", "application/json").log()
+				.all().when().get("/repos/AravindaHB/AppiumAllIPO").time();
+		
+		System.out.println("Response time in ms : " + time);
+	}
+
+
+	@Test
+	public void responseInSec() {
+		long time = RestAssured.given().headers("Authorization", barrierToken).headers("Content-type", "application/json").log()
+				.all().when().get("/repos/AravindaHB/AppiumAllIPO").timeIn(TimeUnit.SECONDS);
+		
+		System.out.println("Response time in sec : " + time);
+	}
+	
+
+}

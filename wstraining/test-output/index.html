@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Aravind\AppData\Local\Temp\testng-eclipse--860358883\testng-customsuite.xml</span>
+                    <span>D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\sanityTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.post.CreateRepository" hash-for-method="validateCreateRepository">validateCreateRepository</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,67 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications" hash-for-method="getRepoWithSpec">getRepoWithSpec</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.auth.CreatePayment" hash-for-method="createPayment">createPayment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications" hash-for-method="getRepoWithoutSpec">getRepoWithoutSpec</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="multipleAssertions">multipleAssertions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="printAllArrayElements">printAllArrayElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="validateBodyInGet">validateBodyInGet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" hash-for-method="validateGetBoardInBDDStyle">validateGetBoardInBDDStyle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" hash-for-method="validateGetBoardInBDDStyleSimplified">validateGetBoardInBDDStyleSimplified</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" hash-for-method="validateGetBoardInExpectFormat">validateGetBoardInExpectFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetTrelloBoard" hash-for-method="validateGetBoardInRestFormat">validateGetBoardInRestFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="validateKeyExist">validateKeyExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="validateMultipleValuesInArray">validateMultipleValuesInArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="validateResponseHeaderInGet">validateResponseHeaderInGet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="validateResponseInArray">validateResponseInArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.synechron.ws.wstraining.basics.get.GetBoardWithValidation" hash-for-method="verifyPerticularValue">verifyPerticularValue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,24 +191,198 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.synechron.ws.wstraining.basics.post.CreateRepository</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getRepoWithSpec">
-                  </a> <!-- getRepoWithSpec -->
-                  <span class="method-name">getRepoWithSpec</span>
+                  <a name="validateCreateRepository">
+                  </a> <!-- validateCreateRepository -->
+                  <span class="method-name">validateCreateRepository</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;401&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.synechron.ws.wstraining.basics.post.CreateRepository.validateCreateRepository(CreateRepository.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.synechron.ws.wstraining.basics.auth.CreatePayment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPayment">
+                  </a> <!-- createPayment -->
+                  <span class="method-name">createPayment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.synechron.ws.wstraining.basics.get.GetBoardWithValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multipleAssertions">
+                  </a> <!-- multipleAssertions -->
+                  <span class="method-name">multipleAssertions</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getRepoWithoutSpec">
-                  </a> <!-- getRepoWithoutSpec -->
-                  <span class="method-name">getRepoWithoutSpec</span>
+                  <a name="printAllArrayElements">
+                  </a> <!-- printAllArrayElements -->
+                  <span class="method-name">printAllArrayElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBodyInGet">
+                  </a> <!-- validateBodyInGet -->
+                  <span class="method-name">validateBodyInGet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateKeyExist">
+                  </a> <!-- validateKeyExist -->
+                  <span class="method-name">validateKeyExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMultipleValuesInArray">
+                  </a> <!-- validateMultipleValuesInArray -->
+                  <span class="method-name">validateMultipleValuesInArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResponseHeaderInGet">
+                  </a> <!-- validateResponseHeaderInGet -->
+                  <span class="method-name">validateResponseHeaderInGet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResponseInArray">
+                  </a> <!-- validateResponseInArray -->
+                  <span class="method-name">validateResponseInArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPerticularValue">
+                  </a> <!-- verifyPerticularValue -->
+                  <span class="method-name">verifyPerticularValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.synechron.ws.wstraining.basics.get.GetTrelloBoard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetBoardInBDDStyle">
+                  </a> <!-- validateGetBoardInBDDStyle -->
+                  <span class="method-name">validateGetBoardInBDDStyle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetBoardInBDDStyleSimplified">
+                  </a> <!-- validateGetBoardInBDDStyleSimplified -->
+                  <span class="method-name">validateGetBoardInBDDStyleSimplified</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetBoardInExpectFormat">
+                  </a> <!-- validateGetBoardInExpectFormat -->
+                  <span class="method-name">validateGetBoardInExpectFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetBoardInRestFormat">
+                  </a> <!-- validateGetBoardInRestFormat -->
+                  <span class="method-name">validateGetBoardInRestFormat</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,18 +390,29 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Aravind\AppData\Local\Temp\testng-eclipse--860358883\testng-customsuite.xml</span>
+            <span class="header-content">D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\sanityTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Trello&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications&quot;/&gt;
+      &lt;class name=&quot;com.synechron.ws.wstraining.basics.get.GetBoardWithValidation&quot;/&gt;
+      &lt;class name=&quot;com.synechron.ws.wstraining.basics.get.GetTrelloBoard&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;/test&gt; &lt;!-- Trello --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;GIT&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.synechron.ws.wstraining.basics.post.CreateRepository&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GIT --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;PayPal&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.synechron.ws.wstraining.basics.auth.CreatePayment&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PayPal --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +424,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Trello (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">GIT (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PayPal (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +456,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getRepoWithSpec')
-data.setCell(0, 2, 'com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications')
-data.setCell(0, 3, 4697);
+data.setCell(0, 1, 'multipleAssertions')
+data.setCell(0, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(0, 3, 5214);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getRepoWithoutSpec')
-data.setCell(1, 2, 'com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications')
-data.setCell(1, 3, 757);
+data.setCell(1, 1, 'validateKeyExist')
+data.setCell(1, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(1, 3, 1287);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createPayment')
+data.setCell(2, 2, 'com.synechron.ws.wstraining.basics.auth.CreatePayment')
+data.setCell(2, 3, 939);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'printAllArrayElements')
+data.setCell(3, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(3, 3, 731);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyPerticularValue')
+data.setCell(4, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(4, 3, 643);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateCreateRepository')
+data.setCell(5, 2, 'com.synechron.ws.wstraining.basics.post.CreateRepository')
+data.setCell(5, 3, 615);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateMultipleValuesInArray')
+data.setCell(6, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(6, 3, 549);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateResponseInArray')
+data.setCell(7, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(7, 3, 547);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateResponseHeaderInGet')
+data.setCell(8, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(8, 3, 547);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateBodyInGet')
+data.setCell(9, 2, 'com.synechron.ws.wstraining.basics.get.GetBoardWithValidation')
+data.setCell(9, 3, 539);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateGetBoardInExpectFormat')
+data.setCell(10, 2, 'com.synechron.ws.wstraining.basics.get.GetTrelloBoard')
+data.setCell(10, 3, 513);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateGetBoardInBDDStyleSimplified')
+data.setCell(11, 2, 'com.synechron.ws.wstraining.basics.get.GetTrelloBoard')
+data.setCell(11, 3, 491);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateGetBoardInRestFormat')
+data.setCell(12, 2, 'com.synechron.ws.wstraining.basics.get.GetTrelloBoard')
+data.setCell(12, 3, 488);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateGetBoardInBDDStyle')
+data.setCell(13, 2, 'com.synechron.ws.wstraining.basics.get.GetTrelloBoard')
+data.setCell(13, 3, 477);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,18 +543,85 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.synechron.ws.wstraining.basics.get.GetBoardWithValidation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">getSpecObj</span>
+                <span class="method-name">getGeport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">getRepoWithSpec</span>
-                <span class="method-start">1348 ms</span>
+                <span class="method-name">multipleAssertions</span>
+                <span class="method-start">195 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getRepoWithoutSpec</span>
-                <span class="method-start">6052 ms</span>
+                <span class="method-name">printAllArrayElements</span>
+                <span class="method-start">5411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateBodyInGet</span>
+                <span class="method-start">6144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateKeyExist</span>
+                <span class="method-start">6685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMultipleValuesInArray</span>
+                <span class="method-start">7974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateResponseHeaderInGet</span>
+                <span class="method-start">8525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateResponseInArray</span>
+                <span class="method-start">9075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPerticularValue</span>
+                <span class="method-start">9624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">saveReports</span>
+                <span class="method-start">10268 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.synechron.ws.wstraining.basics.get.GetTrelloBoard</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateGetBoardInBDDStyle</span>
+                <span class="method-start">10686 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateGetBoardInBDDStyleSimplified</span>
+                <span class="method-start">11165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateGetBoardInExpectFormat</span>
+                <span class="method-start">11658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateGetBoardInRestFormat</span>
+                <span class="method-start">12175 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.synechron.ws.wstraining.basics.post.CreateRepository</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateCreateRepository</span>
+                <span class="method-start">12702 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.synechron.ws.wstraining.basics.auth.CreatePayment</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">getTokenTest</span>
+                <span class="method-start">13358 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createPayment</span>
+                <span class="method-start">13973 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

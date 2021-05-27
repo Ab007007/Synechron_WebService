@@ -1,0 +1,9 @@
+package com.synechron.ws.wstraining.basics.auth;
+
+public class CreatePayment extends PayPalTokenGenerator
+{
+
+	
+	
+	
+}

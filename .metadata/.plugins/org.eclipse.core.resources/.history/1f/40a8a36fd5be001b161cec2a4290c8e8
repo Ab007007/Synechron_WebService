@@ -1,0 +1,16 @@
+package com.synechron.ws.wstraining.basics.auth;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+
+public class CreatePayment extends PayPalTokenGenerator
+{
+
+	@Test
+	public void createPayment()
+	{
+		g
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+package com.synechron.ws.wstraining.basics.auth;
+
+public class PayPalTokenGenerator {
+	
+	
+	
+	
+	public final String clientID = "AUwGyg0pfq7plhQGzIRgp1JTHFaNHDaXf_calPdO4wygrhtSN5xSH6wYo0_uSB6ru1-Gg9pggpyd8jPU";
+	public final String secretKey = "EDFr7gcXOFXROXzK-1yDZBDyn0c02enttxw2ZJFatKcmuFyGEYzeAKFh-5bxZEtB8Gx6lyfu0qVDGkwy";
+	
+
+}

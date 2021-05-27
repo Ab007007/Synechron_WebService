@@ -1,0 +1,4 @@
+# Created at 2021-05-27T16:30:25.069
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Synechron_WebServices_24_05\Eclipse_WS\wstraining\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

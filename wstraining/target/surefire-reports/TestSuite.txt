@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.567 s <<< FAILURE! - in TestSuite
+com.synechron.ws.wstraining.basics.post.CreateRepository.validateCreateRepository  Time elapsed: 0.506 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <401>.
+
+	at com.synechron.ws.wstraining.basics.post.CreateRepository.validateCreateRepository(CreateRepository.java:28)
+

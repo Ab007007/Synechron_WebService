@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test thread-count="5" name="GIT(failed)">
     <classes>
-      <class name="com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications">
+      <class name="com.synechron.ws.wstraining.basics.post.CreateRepository">
         <methods>
-          <include name="getRepoWithoutSpec"/>
-          <include name="getSpecObj"/>
-          <include name="getRepoWithSpec"/>
+          <include name="validateCreateRepository"/>
         </methods>
-      </class> <!-- com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications -->
+      </class> <!-- com.synechron.ws.wstraining.basics.post.CreateRepository -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- GIT(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
