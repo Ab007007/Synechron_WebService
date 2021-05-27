@@ -1,0 +1,66 @@
+package com.synechron.ws.wstraining.basics.specifications;
+
+import org.hamcrest.CoreMatchers;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.*;
+public class CreateRepositoryWithSpecifications {
+	
+	
+	static String baseurl = "https://api.github.com";
+	static String barrierToken = "Bearer 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";
+	
+	static RequestSpecification reqSpec ; 
+	static RequestSpecBuilder builder;
+	
+	static String body = "{\r\n" + 
+			"    \"name\" : \"SPECREPO\",\r\n" + 
+			"    \"description\" : \"First POST Using Body\"\r\n" + 
+			"}";
+	@BeforeClass
+	public void getSpecObj()
+	{
+		RestAssured.baseURI = baseurl;
+		
+		builder = new RequestSpecBuilder();
+		builder.addHeader("Authorization", barrierToken);
+		builder.addHeader("Content-type", "application/json");
+		
+		reqSpec = builder.build();
+	}
+	
+	
+	@Test
+	public void getRepoWithoutSpec()
+	{
+		RestAssured.given()
+						.headers("Authorization", barrierToken)
+						.headers("Content-type", "application/json")
+					.when()
+						.get("/repos/AravindaHB/AppiumAllIPO")
+					.then()
+						.assertThat().statusCode(200).and()
+						.body("name", equalTo("AppiumAllIPO")).log().body();
+						
+	}
+	
+	//@Test
+	public void getRepoWithSpec()
+	{
+		RestAssured.given()
+						.spec(reqSpec)
+						.body(body)
+					.when()
+						.post("/user/repos")
+					.then()
+						.assertThat().statusCode(201).and()
+						.body("name", equalTo("SPECREPO")).log().body();
+						
+	}
+
+}

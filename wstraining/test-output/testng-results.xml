@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6536" started-at="2021-05-27T04:02:18Z" finished-at="2021-05-27T04:02:24Z">
+  <suite name="Default suite" duration-ms="6828" started-at="2021-05-27T06:19:14Z" finished-at="2021-05-27T06:19:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6536" started-at="2021-05-27T04:02:18Z" finished-at="2021-05-27T04:02:24Z">
-      <class name="com.synechron.ws.wstraining.basics.post.CreateRepositoryWithPOJO">
-        <test-method status="PASS" signature="validateCreateRepository()[pri:0, instance:com.synechron.ws.wstraining.basics.post.CreateRepositoryWithPOJO@5cb9f472]" name="validateCreateRepository" duration-ms="6496" started-at="2021-05-27T04:02:18Z" finished-at="2021-05-27T04:02:24Z">
+    <test name="Default test" duration-ms="6828" started-at="2021-05-27T06:19:14Z" finished-at="2021-05-27T06:19:20Z">
+      <class name="com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications">
+        <test-method status="PASS" signature="getSpecObj()[pri:0, instance:com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications@4bec1f0c]" name="getSpecObj" is-config="true" duration-ms="1334" started-at="2021-05-27T06:19:14Z" finished-at="2021-05-27T06:19:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateRepository -->
-      </class> <!-- com.synechron.ws.wstraining.basics.post.CreateRepositoryWithPOJO -->
+        </test-method> <!-- getSpecObj -->
+        <test-method status="PASS" signature="getRepoWithSpec()[pri:0, instance:com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications@4bec1f0c]" name="getRepoWithSpec" duration-ms="4697" started-at="2021-05-27T06:19:15Z" finished-at="2021-05-27T06:19:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoWithSpec -->
+        <test-method status="PASS" signature="getRepoWithoutSpec()[pri:0, instance:com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications@4bec1f0c]" name="getRepoWithoutSpec" duration-ms="757" started-at="2021-05-27T06:19:20Z" finished-at="2021-05-27T06:19:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRepoWithoutSpec -->
+      </class> <!-- com.synechron.ws.wstraining.basics.specifications.CreateRepositoryWithSpecifications -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

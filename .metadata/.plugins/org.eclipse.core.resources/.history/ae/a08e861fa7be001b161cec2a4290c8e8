@@ -1,0 +1,20 @@
+package com.synechron.ws.wstraining.basics.delete;
+
+public class DeleteRepo {
+
+	
+	
+	
+	@Test
+	public void deleteRepositoryName()
+	{
+		RestAssured.baseURI = baseurl;
+		RestAssured.given()
+						.headers("Authorization", barrierToken)
+						.headers("Content-type", "application/json")
+						.when()
+							.delete("/repos/muleraja01/Pia")
+						.then()
+							.assertThat().statusCode(204);
+	}
+}

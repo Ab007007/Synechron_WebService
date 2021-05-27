@@ -1,0 +1,83 @@
+package com.synechron.ws.wstraining.basics.specifications;
+
+import org.hamcrest.CoreMatchers;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.*;
+public class CreateRepositoryWithSpecifications {
+	
+	
+	static String baseurl = "https://api.github.com";
+	static String barrierToken = "Bearer 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";
+	
+	static RequestSpecification reqSpec ; 
+	static RequestSpecBuilder builder;
+
+	static ResponseSpecification resSpec ; 
+	static ResponseSpecBuilder resBuilder;
+	
+	static String body = "{\r\n" + 
+			"    \"name\" : \"SPECREPO\",\r\n" + 
+			"    \"description\" : \"First POST Using Body\"\r\n" + 
+			"}";
+	@BeforeClass
+	public void getSpecObj()
+	{
+		RestAssured.baseURI = baseurl;
+		
+		builder = new RequestSpecBuilder();
+		builder.addHeader("Authorization", barrierToken);
+		builder.addHeader("Content-type", "application/json");
+		
+		reqSpec = builder.build();
+	}
+	
+	
+	@Test
+	public void getRepoWithoutSpec()
+	{
+		RestAssured.given()
+						.headers("Authorization", barrierToken)
+						.headers("Content-type", "application/json").log().all()
+					.when()
+						.get("/repos/AravindaHB/AppiumAllIPO")
+					.then()
+						.assertThat().statusCode(200).and()
+						.body("name", equalTo("AppiumAllIPO")).log().body();
+						
+	}
+	
+	@Test
+	public void getRepoWithSpec()
+	{
+		RestAssured.given()
+						.spec(reqSpec)
+					.when()
+						.get("/repos/AravindaHB/AppiumAllIPO")
+					.then()
+						.assertThat().statusCode(200).and()
+						.body("name", equalTo("AppiumAllIPO")).log().body();
+		
+	}
+	
+	public void getRepoWithSpecResponse()
+	{
+		RestAssured.given()
+						.spec(reqSpec).log().all()
+						.body(body)
+					.when()
+						.post("/user/repos")
+					.then()
+						.assertThat().statusCode(201).and()
+						.body("name", equalTo("SPECREPO")).log().all();
+						
+	}
+
+}

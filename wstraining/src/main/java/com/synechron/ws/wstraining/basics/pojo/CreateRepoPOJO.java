@@ -4,22 +4,21 @@ public class CreateRepoPOJO {
 
 	
 	private String name ;
-	private String desc ;
+	private String description ;
 	
 	
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDesc() {
-		return desc;
-	}
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
-	
 	
 	
 }

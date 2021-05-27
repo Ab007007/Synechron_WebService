@@ -12,7 +12,7 @@ public class CreateRepositoryWithPOJO {
 
 	
 	String baseurl = "https://api.github.com";
-	String barrierToken = "Bearer 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";
+	String barrierToken = "Bearer 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";
 	
 	@Test
 	public void validateCreateRepository()
@@ -22,9 +22,9 @@ public class CreateRepositoryWithPOJO {
 		CreateRepoPOJO cp = new CreateRepoPOJO();
 		Faker f = new Faker();
 		String repoName = f.name().firstName();
+		String desc = f.name().lastName();
 		cp.setName(repoName);
-		cp.setDesc(f.internet().emailAddress());
-		
+		cp.setDescription(desc);
 		RestAssured.given()
 						.headers("Authorization", barrierToken)
 						.headers("Content-type", "application/json")
