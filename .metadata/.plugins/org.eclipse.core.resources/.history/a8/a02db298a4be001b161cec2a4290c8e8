@@ -1,0 +1,7 @@
+package com.synechron.ws.wstraining.basics.pojo;
+
+public class LabelNames
+{
+	private String green;
+	private String yello;
+}

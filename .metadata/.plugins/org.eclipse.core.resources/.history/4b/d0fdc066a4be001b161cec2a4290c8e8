@@ -1,0 +1,7 @@
+package com.synechron.ws.wstraining.basics.pojo;
+
+public class Prefs {
+	private String permissionLevel;
+	private String bgImage;
+	List<ImageConfig> bgImageScaled;
+}

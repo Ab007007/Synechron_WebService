@@ -1,0 +1,35 @@
+package com.synechron.ws.wstraining.basics.post;
+
+import org.hamcrest.CoreMatchers;
+import org.testng.annotations.Test;
+
+import com.synechron.ws.wstraining.basics.pojo.CreateRepoPOJO;
+
+import io.restassured.RestAssured;
+
+public class CreateRepositoryWithPOJO {
+
+	
+	String baseurl = "https://api.github.com";
+	String barrierToken = "Bearer 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";
+	
+	@Test
+	public void validateCreateRepository()
+	{
+				
+		RestAssured.baseURI = baseurl;
+		CreateRepoPOJO cp = new CreateRepoPOJO();
+		cp.setName("RepoFromAPI-123");
+		cp.setDesc("RepoFromAPI-123-Desc");
+		
+		RestAssured.given()
+						.headers("Authorization", barrierToken)
+						.headers("Content-type", "application/json")
+						.body(cp)
+						.when()
+							.post("/user/repos")
+						.then()
+							.assertThat().statusCode(201).and()
+							.body("name", CoreMatchers.equalTo("RepoFromAPI1234"));
+	}
+}

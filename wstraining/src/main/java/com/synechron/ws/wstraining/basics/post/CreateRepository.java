@@ -9,7 +9,7 @@ public class CreateRepository {
 	
 	
 	String baseurl = "https://api.github.com";
-	String barrierToken = "Bearer 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";
+	String barrierToken = "Bearer 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";
 	
 	@Test
 	public void validateCreateRepository()
@@ -19,7 +19,7 @@ public class CreateRepository {
 						.headers("Authorization", barrierToken)
 						.headers("Content-type", "application/json")
 						.body("{\r\n" + 
-								"    \"name\" : \"RepoFromAPI1234\",\r\n" + 
+								"    \"name\" : \"RepoFromAPI12345\",\r\n" + 
 								"    \"description\" : \"First POST Using Body\"\r\n" + 
 								"}")
 						.when()

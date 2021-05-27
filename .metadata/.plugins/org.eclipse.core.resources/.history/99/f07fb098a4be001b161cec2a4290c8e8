@@ -1,0 +1,9 @@
+package com.synechron.ws.wstraining.basics.pojo;
+
+public class CreateBoardPOJO {
+	
+	private String name;
+	private String id;
+	private LabelNames lb;
+	private Prefs ps;
+}

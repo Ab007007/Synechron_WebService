@@ -1,0 +1,5 @@
+package com.synechron.ws.wstraining.basics.pojo;
+
+public class CreateBoardPOJO {
+
+}

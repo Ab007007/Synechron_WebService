@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7117" started-at="2021-05-26T10:33:26Z" finished-at="2021-05-26T10:33:33Z">
+  <suite name="Default suite" duration-ms="6536" started-at="2021-05-27T04:02:18Z" finished-at="2021-05-27T04:02:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7117" started-at="2021-05-26T10:33:26Z" finished-at="2021-05-26T10:33:33Z">
-      <class name="com.synechron.ws.wstraining.basics.post.CreateRepository">
-        <test-method status="PASS" signature="validateCreateRepository()[pri:0, instance:com.synechron.ws.wstraining.basics.post.CreateRepository@1e397ed7]" name="validateCreateRepository" duration-ms="7067" started-at="2021-05-26T10:33:26Z" finished-at="2021-05-26T10:33:33Z">
+    <test name="Default test" duration-ms="6536" started-at="2021-05-27T04:02:18Z" finished-at="2021-05-27T04:02:24Z">
+      <class name="com.synechron.ws.wstraining.basics.post.CreateRepositoryWithPOJO">
+        <test-method status="PASS" signature="validateCreateRepository()[pri:0, instance:com.synechron.ws.wstraining.basics.post.CreateRepositoryWithPOJO@5cb9f472]" name="validateCreateRepository" duration-ms="6496" started-at="2021-05-27T04:02:18Z" finished-at="2021-05-27T04:02:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateRepository -->
-      </class> <!-- com.synechron.ws.wstraining.basics.post.CreateRepository -->
+      </class> <!-- com.synechron.ws.wstraining.basics.post.CreateRepositoryWithPOJO -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
